@@ -12,8 +12,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import time
 from sklearn.metrics import accuracy_score, roc_auc_score, cohen_kappa_score, ConfusionMatrixDisplay, roc_curve, classification_report
-# from google.colab import files
-# uploaded = files.upload()
 full_data = pd.read_csv('weatherAUS.csv')
 full_data.head()
 full_data.shape
@@ -354,4 +352,5 @@ if st.button("Predict"):
 
 # print("✅ Model saved successfully as rainfall_model.pkl")
 # plt.savefig("plots/correlation_heatmap.png")
+
 # print("✅ Heatmap saved!")
